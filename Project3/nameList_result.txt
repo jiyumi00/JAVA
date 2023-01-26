@@ -1,0 +1,5 @@
+Yun : 2
+Lee : 2
+Kim : 2
+Park : 1
+Jeong : 1
