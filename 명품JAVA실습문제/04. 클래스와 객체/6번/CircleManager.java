@@ -10,7 +10,15 @@ public class CircleManager{
 			int radius=scanner.nextInt();
 			c[i]=new Circle(x,y,radius);
 		}
-		for(int i=0;i<c.length;i++) c[i].show();
+		int max=0;
+		int index=0;
+		for(int i=0;i<c.length;i++) {
+			if(max<c[i].getRadius()){
+				max=c[i].getRadius();
+				index=i;
+			}
+		}
+		c[index].show();
 		scanner.close();
 	}
 }

@@ -6,7 +6,11 @@ public class Circle{
 		this.y=y;
 		this.radius=radius;
 	}
-	public void show(){
-		System.out.println("("+x+","+y+")"+radius);
+	public int getRadius(){
+		return this.radius;
 	}
+	public void show(){
+		System.out.println("가장 면적이 큰 원은 ("+x+","+y+")"+radius);
+	}
+	
 }
