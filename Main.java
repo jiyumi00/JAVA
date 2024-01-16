@@ -1,18 +1,19 @@
-import java.util.Scanner;
+import java.util.*;
+
 public class Main{
-	public static void main(String[]args)throws Exception{
+	public static void main(String[]args){
+		Vector<Integer> v=new Vector<Integer>();
+		v.add(5);
+		v.add(4);
+		v.add(100);
+		v.add(-1);
 		
-		int n,x,a;
-		Scanner input=new Scanner(System.in);
+		v.add(2,3);
 		
-		n=input.nextInt();
-		x=input.nextInt();
-		
-		for(int i=0;i<n;i++){
-			a=input.nextInt();
-			if(a<x){
-				System.out.print(a+" ");
-			}
+		Iterator<Integer> it=v.iterator();
+		while(it.hasNext()){
+			int n=it.next();
+			System.out.println(n);
 		}
 		
 	}
