@@ -1,5 +1,0 @@
-Yun : 1
-Min : 1
-King : 1
-Kim : 2
-Park : 1
